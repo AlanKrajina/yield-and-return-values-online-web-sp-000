@@ -7,6 +7,7 @@ def hello(array)
     new << yield(array[i])
     i += 1
   end
+  return new
 end
 
 
