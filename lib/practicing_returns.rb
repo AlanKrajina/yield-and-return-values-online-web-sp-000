@@ -1,9 +1,10 @@
 require 'pry'
 
 def hello(array)
+  new=[]
   i = 0
   while i < array.length
-    yield(array[i])
+    new << yield(array[i])
     i += 1
   end
 end
