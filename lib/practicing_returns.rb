@@ -1,13 +1,13 @@
 require 'pry'
 
 def hello(array)
-  new=[]
+  collection=[]
   i = 0
   while i < array.length
-    new << yield(array[i])
+    collection << yield(array[i])
     i += 1
   end
-  return new
+  return collection
 end
 
 
